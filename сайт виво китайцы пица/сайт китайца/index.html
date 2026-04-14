@@ -1,0 +1,956 @@
+<!-- Imperial Dragon Roll -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#564300",
+                    "secondary": "#fff9ef",
+                    "on-surface": "#e5e2e1",
+                    "tertiary-container": "#d5af37",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "surface-container-highest": "#353534",
+                    "secondary-fixed-dim": "#e9c400",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed": "#241a00",
+                    "surface-bright": "#3a3939",
+                    "secondary-fixed": "#ffe16d",
+                    "on-secondary-fixed": "#221b00",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-tint": "#e9c349",
+                    "on-tertiary-fixed": "#241a00",
+                    "primary-fixed-dim": "#e9c349",
+                    "tertiary": "#f3ca50",
+                    "outline-variant": "#4d4635",
+                    "primary-container": "#d4af37",
+                    "on-primary-container": "#554300",
+                    "error": "#ffb4ab",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "on-secondary-container": "#725f00",
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary": "#3c2f00",
+                    "surface-container-high": "#2a2a2a",
+                    "on-background": "#e5e2e1",
+                    "outline": "#99907c",
+                    "inverse-primary": "#735c00",
+                    "on-error": "#690005",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-variant": "#353534",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#ffe088",
+                    "error-container": "#93000a",
+                    "on-secondary": "#3a3000",
+                    "primary": "#f2ca50",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary": "#3d2f00",
+                    "tertiary-fixed": "#ffe08b",
+                    "surface": "#131313",
+                    "tertiary-fixed-dim": "#eac249",
+                    "inverse-on-surface": "#313030",
+                    "secondary-container": "#ffdb3c",
+                    "on-secondary-fixed-variant": "#544600",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            background-image: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 100%);
+            font-family: 'Manrope', sans-serif;
+        }
+        .grain {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface">
+<div class="grain"></div>
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-md shadow-[0_4px_30px_rgba(212,175,55,0.06)] flex justify-between items-center px-6 h-16 w-full">
+<button class="text-[#f2ca50] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="text-xl font-bold tracking-[0.2em] text-[#f2ca50] font-['Noto_Serif'] uppercase">IMPERIAL TABLE</div>
+<button class="text-[#f2ca50] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<!-- Hero Product Image -->
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-[#f2ca50]/20 to-transparent blur-2xl opacity-30"></div>
+<div class="relative aspect-square rounded-full overflow-hidden border border-[#d4af37]/10 shadow-2xl">
+<img class="w-full h-full object-cover transform transition-transform duration-700 hover:scale-110" data-alt="Exquisite gold-leafed sushi roll on a black slate platter with dramatic dark lighting and soft golden reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYHKQKCMdmSytNqNWPSliCGdjtUFGqMUDL-y7HVrNUeuTayw6rDwH1m-Coi4ZDkVxk6cAiACm3fZgBdgbFb3uoDUiRgr-2pcjXViqBvgiKlBc4anAVP9zIf8nhUUFGOf6WgCybSKW7gzXnTbq0zhE3miREr-XmuXxpGsGiimJLeuKo3LT_5fO9XsGYjlc_YPNy6pkhlgLKYC4eaSnxl75xalC-2EuzxiPr2bRFFck7_Swh_003HOQzkyMLUX8OxaZEthE3XnbxUKnZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313]/80 via-transparent to-transparent"></div>
+</div>
+<!-- Ornamental Seal -->
+<div class="absolute -bottom-6 -right-6 w-24 h-24 bg-[#131313] border border-[#d4af37]/30 rounded-full flex items-center justify-center shadow-2xl">
+<div class="text-[#f2ca50] text-center">
+<span class="material-symbols-outlined text-4xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="text-[8px] font-bold tracking-[0.2em] mt-1 uppercase">EST. 1894</div>
+</div>
+</div>
+</div>
+<!-- Product Details -->
+<div class="flex flex-col gap-8">
+<div>
+<span class="inline-block py-1 px-3 bg-primary-container/10 border border-primary-container/30 text-primary text-[10px] font-bold tracking-[0.2em] rounded-full mb-4 uppercase">
+                        CHEF'S SIGNATURE SELECTION
+                    </span>
+<h1 class="font-['Noto_Serif'] text-5xl lg:text-7xl font-bold tracking-[-0.02em] text-on-surface leading-tight mb-2">
+                        Imperial <span class="text-primary italic">Dragon</span> Roll
+                    </h1>
+<p class="font-['Noto_Serif'] text-3xl text-primary font-light">$888</p>
+</div>
+<div class="space-y-6">
+<p class="text-on-surface-variant font-body leading-relaxed text-lg">
+                        The ultimate expression of culinary decadence. This masterpiece features <span class="text-primary font-bold">24-karat edible gold leaf</span> delicately draped over Bluefin Toro and Japanese A5 Wagyu. Crowned with Almas Caviar and a reduction of aged vintage sake.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="diamond">diamond</span>
+<h3 class="text-[10px] font-bold tracking-widest text-primary uppercase mb-1">Authenticity</h3>
+<p class="text-xs text-on-surface-variant">GIA Certified Gold Leaf</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="timer">timer</span>
+<h3 class="text-[10px] font-bold tracking-widest text-primary uppercase mb-1">Preparation</h3>
+<p class="text-xs text-on-surface-variant">45-Minute Craftsmanship</p>
+</div>
+</div>
+</div>
+<!-- Selection and CTA -->
+<div class="flex flex-col gap-6 pt-6">
+<div class="flex items-center justify-between p-4 bg-surface-container-high rounded-xl border-b border-primary/40">
+<span class="text-sm font-bold tracking-widest uppercase">QUANTITY</span>
+<div class="flex items-center gap-6">
+<button class="text-primary-container hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="remove">remove</span>
+</button>
+<span class="text-xl font-bold font-headline">01</span>
+<button class="text-primary-container hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<button class="group relative overflow-hidden bg-gradient-to-br from-[#f2ca50] to-[#d4af37] text-[#3c2f00] py-5 rounded-xl font-bold tracking-widest flex items-center justify-center gap-3 transition-transform active:scale-95 shadow-[0_10px_30px_rgba(242,202,80,0.2)]">
+<span class="material-symbols-outlined text-2xl" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="uppercase">Add to Gilt Cart</span>
+<div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+</button>
+</div>
+</div>
+</div>
+<!-- Ingredients Section (Asymmetric) -->
+<section class="mt-32">
+<h2 class="font-headline text-2xl tracking-[0.3em] text-primary uppercase text-center mb-16">The Alchemist's Pantry</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 relative h-[400px] rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Close up of fresh bluefin tuna and premium caviar on a stone counter with atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw4t6eHlHDm9qQ-Rr6Xy4bo6zIJeuIVBd3hyJMtFxV1HStnTxMfkk4hQshV_VtLqSrRh2Eb6mkuq8Jvw2fgpsNJqrIGNFrgXEaUHA3gRfcnmInyWQdpXgXCZ6GpTpKYm6mcBW_-hoWR0Yw-N28YtfivjYde_ZOxbycZwlEM0r9MS5E9beVqYFG97oNnh7HpwhNQJuscUF-JVWAlx0sWyTIhrQev-9DaCybmnELqe0uB0xbSj9oodNpI5HcN6zRQ7R3iwXC3WWrH0n4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#131313] to-transparent flex items-end p-8">
+<div class="max-w-xs">
+<h4 class="font-headline text-xl mb-2">Wild Bluefin Toro</h4>
+<p class="text-sm text-on-surface-variant">Sourced directly from the morning auctions at Toyosu, aged for 7 days to peak umami.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 rounded-2xl border border-outline-variant/10 flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6" data-icon="skillet">skillet</span>
+<h4 class="font-headline text-xl mb-4 text-primary">Sacred Wagyu</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">A5 Grade Olive Wagyu from Shodoshima, lightly torched to release intramuscular fats that melt at room temperature.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#131313] border-t border-[#d4af37]/15 shadow-[0_-10px_40px_rgba(0,0,0,0.8)] z-50 rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-[#e5e2e1] px-6 py-1 hover:bg-[#d4af37]/10 transition-all active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em] mt-1">MENU</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e2e1] px-6 py-1 hover:bg-[#d4af37]/10 transition-all active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em] mt-1">CART</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e2e1] px-6 py-1 hover:bg-[#d4af37]/10 transition-all active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em] mt-1">PROFILE</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Home - Imperial Menu -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPERIAL TABLE | The Obsidian Gilt</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#564300",
+                    "secondary": "#fff9ef",
+                    "on-surface": "#e5e2e1",
+                    "tertiary-container": "#d5af37",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "surface-container-highest": "#353534",
+                    "secondary-fixed-dim": "#e9c400",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed": "#241a00",
+                    "surface-bright": "#3a3939",
+                    "secondary-fixed": "#ffe16d",
+                    "on-secondary-fixed": "#221b00",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-tint": "#e9c349",
+                    "on-tertiary-fixed": "#241a00",
+                    "primary-fixed-dim": "#e9c349",
+                    "tertiary": "#f3ca50",
+                    "outline-variant": "#4d4635",
+                    "primary-container": "#d4af37",
+                    "on-primary-container": "#554300",
+                    "error": "#ffb4ab",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "on-secondary-container": "#725f00",
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary": "#3c2f00",
+                    "surface-container-high": "#2a2a2a",
+                    "on-background": "#e5e2e1",
+                    "outline": "#99907c",
+                    "inverse-primary": "#735c00",
+                    "on-error": "#690005",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-variant": "#353534",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#ffe088",
+                    "error-container": "#93000a",
+                    "on-secondary": "#3a3000",
+                    "primary": "#f2ca50",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary": "#3d2f00",
+                    "tertiary-fixed": "#ffe08b",
+                    "surface": "#131313",
+                    "tertiary-fixed-dim": "#eac249",
+                    "inverse-on-surface": "#313030",
+                    "secondary-container": "#ffdb3c",
+                    "on-secondary-fixed-variant": "#544600",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .chinese-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20S-10 18.954-10 30s8.954 20 20 20 20-8.954 20-20zm-2 0c0 9.941-8.059 18-18 18S-8 39.941-8 30s8.059-18 18-18 18 8.059 18 18zm32 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm-2 0c0 9.941-8.059 18-18 18s-18-8.059-18-18 8.059-18 18-18 18 8.059 18 18z' fill='%23f2ca50' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 min-h-screen">
+<div class="fixed inset-0 grain-overlay z-[60]"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-md shadow-[0_4px_30px_rgba(212,175,55,0.06)] flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#f2ca50] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="text-xl font-bold tracking-[0.2em] text-[#f2ca50] font-['Noto_Serif'] uppercase">IMPERIAL TABLE</div>
+<div class="flex items-center gap-4">
+<button class="text-[#f2ca50] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pb-32 pt-16 chinese-pattern min-h-screen">
+<!-- Hero Carousel / Premium Items -->
+<section class="relative px-6 pt-8 overflow-hidden">
+<div class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-8">
+<!-- Premium Item 1 -->
+<div class="min-w-[85vw] md:min-w-[600px] snap-center relative aspect-[4/5] md:aspect-[16/10] rounded-xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of premium sushi rolls topped with real gold leaf on a dark slate platter, dramatic spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXu4OraDjDoTbKx2OV1yippBGKVQXety7dQkXWIACuh30KCIdYzn8IDS-3vFrsgbz1w3D3fabeDI-mnqNCylgybkaFhTlJLp8CELNmEvoAi-pGlLxurMV3c-QnDZIUQwKmQF7nGzEpjwA_sguo2BgQaJWJBHMqKN2go2_uYEDBH5wJ67dZWYhF-zpUGXLTWNwPL88R78qOuj8nD8WYsZvgYJcIibhqQgEuSJfaz6Rx0XAEWgO6z0WgkR4K_4npgfhAgblszmi9mLSE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="bg-primary/20 backdrop-blur-md text-primary text-[10px] font-bold tracking-widest px-3 py-1 rounded-full border border-primary/30 mb-3 inline-block uppercase">Vivo exclusive</span>
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-on-surface leading-tight tracking-[-0.02em] uppercase">Gold-leaf<br/>Otoro Sushi</h2>
+</div>
+<div class="text-right">
+<p class="text-primary font-headline text-2xl font-bold">¥12,888</p>
+<p class="text-on-surface-variant text-[10px] tracking-widest font-bold">RESERVE NOW</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Premium Item 2 -->
+<div class="min-w-[85vw] md:min-w-[600px] snap-center relative aspect-[4/5] md:aspect-[16/10] rounded-xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Artisanal luxury pizza topped with black truffle shavings and wagyu beef strips, moody fine dining lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9dPFq9cs1dj5e8btDZxEhy1bbTEzdNuoGYJ3yfRypOiVwtaS4gyKgFsUn3uSrZHUa_c9W38-SwHZvRmXDIfpR3QP0x2g5HvBu_QIUfmYVd1AOqWyc-gh4xPmQaCothvaEogWn6zyHc15GgaDZtVSWjDFBYSi3pwhIzBNZ1qPBTeI1tqRgbjqJb5JlcjYFzXtbc6n1lH7SEohwlmeh8okNntf8sXn9YnVtMexLrYO5hA4CofiJPkFMpfV4D6MMs7EqKg1Ad8vp4RYe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-on-surface leading-tight tracking-[-0.02em] uppercase">Imperial<br/>Truffle Wagyu</h2>
+</div>
+<div class="text-right">
+<p class="text-primary font-headline text-2xl font-bold">¥18,500</p>
+<p class="text-on-surface-variant text-[10px] tracking-widest font-bold">RESERVE NOW</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Page Indicator -->
+<div class="flex justify-center gap-2 mt-4">
+<div class="h-1 w-8 bg-primary rounded-full"></div>
+<div class="h-1 w-2 bg-outline-variant rounded-full"></div>
+<div class="h-1 w-2 bg-outline-variant rounded-full"></div>
+</div>
+</section>
+<!-- Categories / Bento Grid -->
+<section class="px-6 mt-16">
+<div class="flex justify-between items-end mb-8">
+<h3 class="font-headline text-sm tracking-[0.2em] text-primary uppercase">Categories</h3>
+<span class="text-[10px] text-on-surface-variant tracking-widest uppercase">Explore All</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="relative aspect-square rounded-xl overflow-hidden group col-span-2 md:col-span-1 bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" data-alt="Top view of artistic sushi rolls arranged in a circle, cinematic lighting against black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8I435P4VsGjPg3gAgtxoT8UcGNE80hlHjttdxTAarJy9b5_i4T8WNMjrlzf9T_sDEOKV7qQvFhMEVp5fWL-NlNSOU0h4ZqBpWWdZVvTyoGOitTY62aBYMG6cq1WvFTugTrNQP1Pks9j4MuWrk7xyW0UKVrbB5WalA7YlKEzSz83va2X5o-jhrWpxzzPfYdH7c5_3enCos_lcwhdc10-bDgcrKEI3Vh4bL82izyROQbGJTvy88dv80cZRBc1RCBHA38TwIM82TC7im"/>
+<div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-[#131313] to-transparent">
+<h4 class="font-headline text-xl font-bold text-primary uppercase">Signature Rolls</h4>
+<p class="text-[10px] text-on-surface-variant tracking-[0.1em] mt-1">12 SELECTIONS</p>
+</div>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden group bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" data-alt="Luxury pizza with gourmet toppings on a dark wood board, golden embers in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVLRA9iMyJLiJUfuth4rWQshtVIrkrwANYTpLbWKUMEp_RoJEPmaq1o29c7ca6IuBhCOieBDCfv3-Pl9xtEjJoyIM_tfKVeb2d8To74XRtaU2pF_HeMO535K1nGfgbuPGdQRYTQUzH6EaKrAgTJwZP7O6gAQ8e-70MeTZQhBlxIIAcOrZA4xHNRBHNBTepR3Meoo2zWPPRNMdMqCWFhJLXIkt-Q2l_-z6V1vQrezItOUS41IQ3JisJeNT2a-YgKhw7dMXEsEqk_nOS"/>
+<div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-[#131313] to-transparent">
+<h4 class="font-headline text-lg font-bold text-primary uppercase">Imperial Pizza</h4>
+</div>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden group bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" data-alt="Steaming cup of fine Chinese tea in a jade bowl, soft steam rising in dark environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4_7mQZHrQOqRXhIVOqSNFDz-jkXNiXSkh9ioYufEb1hOPT_0sCNlvVYcwL0J3p8AYma8HuWCxknuOt-yAwg5AO1OqJ7DY5v2FSjT56K3UKmthw9jnfJQQ5WWyxQywCmMYgMaQsExa9-zh5MAGyNHIuLf_teuIwmwpOgLkBK3xyTeSGhT7f1bO3m46qI7xtafGK9QAYbSGiNsAZne9tPBb3A1__DF_D-5DksmtjjZV3DoIIJtJ51WuIkKfFFq9EzouVHLnxJQZzH4E"/>
+<div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-[#131313] to-transparent">
+<h4 class="font-headline text-lg font-bold text-primary uppercase">Rare Teas</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Exclusive Selection List -->
+<section class="px-6 mt-16">
+<h3 class="font-headline text-sm tracking-[0.2em] text-primary uppercase mb-8">Chef's Selection</h3>
+<div class="space-y-8">
+<!-- Item 1 -->
+<div class="flex gap-6 group">
+<div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up of uni sushi topped with gold flakes and caviar, macro photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-kj47QygNqB2u6CwmKDhkaifKHWojImlUHM2LgrbAOwLJVCvQU3RNjQvVjFm6qsGjX6M6qnEjtIxjJQ4C7wg5676h6PLAYG_IX2sYNc6EMF3sGposUV23orBaPRVTjceh0C5Oq341xBSPZwReUMFca_ksc_jfzgUNW5R3CWWyGYCDYAsyD4ZvbNpVvRo5CyV_efEzG9AaIg5KPWdN5cA1iCQfflkX7mElA5BC8wMW23yewjO7IggjTI7_5EMQs0ectbGsi3FiAZDg"/>
+</div>
+<div class="flex-grow flex flex-col justify-center">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-lg font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Dragon's Breath Unagi</h4>
+<p class="text-xs text-on-surface-variant font-medium mt-1 leading-relaxed">Smoked eel with szechuan peppercorn glaze and 24k gold flakes.</p>
+</div>
+<span class="text-primary font-bold ml-4">¥4,200</span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="text-[9px] bg-secondary-container/10 text-secondary-container px-2 py-0.5 rounded border border-secondary-container/20 uppercase tracking-widest font-bold">Vivo exclusive</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-6 group">
+<div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Traditional steamed dumplings filled with lobster and gold garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWHG0HhqZBSxIhtdN-agqqEeodWgHBF-eldrHL9at-z9nZ4kyvuyxd7x74wD3dYQV5z0CsCROzf_sOcI1S7bVUIU6t8ZeAdr45dARyjy3GVaoBJ25UHJfXFk1EYmOWQcG7gyxywsU6_fFJ7LpnodmgA5slQjVCz7ceXkBZkTNvhwX04ufgfS3eIi2Y417W9Pl_xdZUsojDMs0qdIRonrb5cZ9T6RXV_JDlQXGeOIZsSTrwhWHpmgl2RxYjEfDBNCv0z668T8RDW4iH"/>
+</div>
+<div class="flex-grow flex flex-col justify-center">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-lg font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Jade Emperor Xiao Long Bao</h4>
+<p class="text-xs text-on-surface-variant font-medium mt-1 leading-relaxed">Hand-folded dumplings with blue lobster and champagne broth.</p>
+</div>
+<span class="text-primary font-bold ml-4">¥3,888</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex gap-6 group">
+<div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Rare Chinese white tea leaves in an ornate porcelain cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSx1xT3k-WEOBXulLXfHipQyQcax9MKdmwiIuEM_OzAGuq1eozwNsB6uQ9g7MkHLWpvwqTbSOi7o85HdAfQZuq-ES42zFpK8FwG6iUXSw_nrWf4_4F-5pImty087mKz7lgvdMizzOgB-9oi9jylJK2dNLKiumRpJmblTKv4qADEb-n48ZkiWOoo5ZBNwHKNbIWfckyORFYMWis49i4kdSM55dCZ4jqJBlMCIntYTPkxA_Zdr0gBhIN_GvOgWifLIKM04FaJHQENdQT"/>
+</div>
+<div class="flex-grow flex flex-col justify-center">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-lg font-bold text-on-surface uppercase group-hover:text-primary transition-colors">1980 Aged Pu'er Reserve</h4>
+<p class="text-xs text-on-surface-variant font-medium mt-1 leading-relaxed">Ancient tree leaves from Yunnan, fermented for four decades.</p>
+</div>
+<span class="text-primary font-bold ml-4">¥9,500</span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="text-[9px] bg-secondary-container/10 text-secondary-container px-2 py-0.5 rounded border border-secondary-container/20 uppercase tracking-widest font-bold">Vivo exclusive</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Seasonal CTA -->
+<section class="px-6 mt-20">
+<div class="flex justify-between items-end mb-8">
+<h3 class="font-headline text-sm tracking-[0.2em] text-primary uppercase">Secret Menu</h3>
+<span class="text-[10px] text-on-surface-variant tracking-widest uppercase">Limited Availability</span>
+</div>
+<div class="relative rounded-xl overflow-hidden group bg-surface-container-low border border-primary/20">
+<div class="aspect-[16/10] md:aspect-[21/9] overflow-hidden">
+<img alt="Happy Chinese chef with a bowl of late night noodles" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX3vBnaPQJIWFJx8WB1jqgb5YI0l28tY2oonKomtQxhbCf-IShDn_fjhJyKT1Qk0kgCG_jZmX0-l_VeoGFkMzT3PyGDKzDrsiFXIirIN-VbrcbZXMxhX_dkQ4oABKxW9tWukcrZLb4y2C96BO5P-7aSsE9Sn7mIuK3h6gFynVLKsnBOk5zVY5Lnp_u6Q6tIkYhHqDd9PfB14GxN9AmUAS9PwTD7iSWUIAfOZQ0A4QWi3qBV2GGcwIijN7_vtoxkRQy8ojMgee1M-gR"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex justify-between items-end">
+<div class="max-w-[70%]">
+<span class="text-[9px] bg-primary/20 text-primary px-2 py-0.5 rounded border border-primary/30 uppercase tracking-widest font-bold mb-3 inline-block">Vivo Exclusive</span>
+<h4 class="font-headline text-2xl font-bold text-on-surface uppercase tracking-tight">Chef's Late Night Favorite</h4>
+<p class="text-xs text-on-surface-variant font-medium mt-1 leading-relaxed">The master's personal recipe: hand-pulled silk noodles in a 48-hour bone marrow broth.</p>
+</div>
+<button class="bg-gradient-to-br from-[#f2ca50] to-[#d4af37] text-[#131313] px-4 py-2 rounded-lg font-bold text-[10px] tracking-widest uppercase active:scale-95 transition-transform whitespace-nowrap">Reveal Selection</button>
+</div>
+</div>
+</div>
+</section><section class="mt-20 px-6">
+<div class="relative bg-surface-container-high rounded-xl overflow-hidden p-8 border border-primary/10">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold text-primary tracking-tight uppercase">Imperial Rewards</h3>
+<p class="text-sm text-on-surface-variant mt-2 max-w-[70%]">Access private dining suites and vintage wine auctions.</p>
+<button class="mt-6 bg-gradient-to-br from-[#f2ca50] to-[#d4af37] text-[#131313] px-6 py-3 rounded-lg font-bold text-xs tracking-[0.2em] uppercase active:scale-95 transition-transform">Join the Circle</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#131313] z-50 rounded-t-xl border-t border-[#d4af37]/15 shadow-[0_-10px_40px_rgba(0,0,0,0.8)]">
+<button class="flex flex-col items-center justify-center bg-gradient-to-br from-[#f2ca50] to-[#d4af37] text-[#131313] rounded-xl px-6 py-1 active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="restaurant_menu" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em] mt-1">MENU</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e5e2e1] px-6 py-1 hover:bg-[#d4af37]/10 transition-all active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em] mt-1">CART</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e5e2e1] px-6 py-1 hover:bg-[#d4af37]/10 transition-all active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em] mt-1">PROFILE</span>
+</button>
+</nav>
+<!-- Scroll Indicator / Ornamental Seal -->
+<div class="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-40 hidden md:flex">
+<div class="w-1 h-12 bg-primary/20 rounded-full relative overflow-hidden">
+<div class="absolute top-0 w-full h-1/2 bg-primary"></div>
+</div>
+<span class="text-[10px] text-primary font-bold tracking-widest [writing-mode:vertical-lr] uppercase">Scroll</span>
+</div>
+</body></html>
+
+<!-- Gilt Cart -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPERIAL TABLE - Shopping Cart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#564300",
+                    "secondary": "#fff9ef",
+                    "on-surface": "#e5e2e1",
+                    "tertiary-container": "#d5af37",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "surface-container-highest": "#353534",
+                    "secondary-fixed-dim": "#e9c400",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed": "#241a00",
+                    "surface-bright": "#3a3939",
+                    "secondary-fixed": "#ffe16d",
+                    "on-secondary-fixed": "#221b00",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-tint": "#e9c349",
+                    "on-tertiary-fixed": "#241a00",
+                    "primary-fixed-dim": "#e9c349",
+                    "tertiary": "#f3ca50",
+                    "outline-variant": "#4d4635",
+                    "primary-container": "#d4af37",
+                    "on-primary-container": "#554300",
+                    "error": "#ffb4ab",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "on-secondary-container": "#725f00",
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary": "#3c2f00",
+                    "surface-container-high": "#2a2a2a",
+                    "on-background": "#e5e2e1",
+                    "outline": "#99907c",
+                    "inverse-primary": "#735c00",
+                    "on-error": "#690005",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-variant": "#353534",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#ffe088",
+                    "error-container": "#93000a",
+                    "on-secondary": "#3a3000",
+                    "primary": "#f2ca50",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary": "#3d2f00",
+                    "tertiary-fixed": "#ffe08b",
+                    "surface": "#131313",
+                    "tertiary-fixed-dim": "#eac249",
+                    "inverse-on-surface": "#313030",
+                    "secondary-container": "#ffdb3c",
+                    "on-secondary-fixed-variant": "#544600",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-texture {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 min-h-screen pb-32">
+<div class="fixed inset-0 grain-texture z-0"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-md shadow-[0_4px_30px_rgba(212,175,55,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<button class="text-[#f2ca50] active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-[0.2em] text-[#f2ca50] font-['Noto_Serif'] uppercase">IMPERIAL TABLE</h1>
+<div class="relative">
+<button class="text-[#f2ca50] active:scale-95 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+</button>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">3</span>
+</div>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</header>
+<main class="relative z-10 pt-24 px-6 max-w-4xl mx-auto">
+<div class="mb-10 text-center">
+<p class="text-primary font-label text-[10px] tracking-[0.3em] uppercase mb-2">Your Selection</p>
+<h2 class="text-4xl font-headline font-bold text-on-surface tracking-tight">The Imperial Basket</h2>
+</div>
+<!-- Cart Items List -->
+<div class="space-y-8 mb-16">
+<!-- Item 1 -->
+<div class="flex flex-col md:flex-row gap-6 p-4 rounded-xl bg-surface-container-low transition-all hover:bg-surface-container-high group">
+<div class="w-full md:w-32 h-32 overflow-hidden rounded-xl bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500" data-alt="Close-up of premium gold-leaf sushi served on a dark slate plate with artistic garnish and dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrLnogblQ2UBnwvmCTNDxXcUFdx2IbSA3qSFQxKIG9yBZF1zfCL9ZwAvLb-Xam_tfuh7iQiEh8PI14lzLrHNdQtE97eYjQ660zPdtQvyzwvsICcPHfoFt49Sytk7aLjm79IRr0oiZWcRzHwzyjvngx07k2VlRnHQ7c7z9-emkTZ_pveamL1LLr-YhSk-qsfOXn0pd8K9itAzOnqDmKJZ8tspDAmBjwzTPXwgOECJzofqOfCricFemtjc4WQR5nWwyhbqM7yhL8tthj"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-headline font-bold text-on-surface tracking-tight mb-1">Gilded Dragon Roll</h3>
+<p class="text-on-surface-variant text-sm max-w-md">24k edible gold leaf, bluefin tuna belly, and imperial sturgeon caviar.</p>
+</div>
+<p class="text-primary font-headline font-bold text-lg">$124.00</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center gap-4 bg-surface-container-lowest px-3 py-1 rounded-full border border-outline-variant/20">
+<button class="text-primary hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-sm font-bold font-label">01</span>
+<button class="text-primary hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center gap-1 text-xs uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-sm">delete</span> Remove
+                        </button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col md:flex-row gap-6 p-4 rounded-xl bg-surface-container-low transition-all hover:bg-surface-container-high group">
+<div class="w-full md:w-32 h-32 overflow-hidden rounded-xl bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500" data-alt="Exquisite chocolate truffle dessert with gold flakes and raspberry coulis on a minimal black ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB4ZZUqlrbw_0y0kW_4Y7dWuHTfsrVuUAvm99T9yDnEzzjIK2iYAdlydDE47td3bsrFIPSi4mR22PNqU_bzSQUOc4yeYn7YqTZvmCDv_nmKQwX6ZOTs-iz3D9lYE625I39YAlhVth6yePHRXwUWAy1qT3oGRt7nGq6DbK1lHMY9hhk8KQPqhKpTnvOJWGVtoy4p2xJT4TyfzOj4Zr3GDrv1VUgPEUXYMfquzRSYka-rVCuXJeC2cQRBwY4XJjrq0LDFcg2_ECaK9s0"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-headline font-bold text-on-surface tracking-tight mb-1">Obsidian Velvet Mousse</h3>
+<p class="text-on-surface-variant text-sm max-w-md">Dark Madagascar cocoa, fermented honey, and shaved white truffles.</p>
+</div>
+<p class="text-primary font-headline font-bold text-lg">$48.00</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center gap-4 bg-surface-container-lowest px-3 py-1 rounded-full border border-outline-variant/20">
+<button class="text-primary hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-sm font-bold font-label">02</span>
+<button class="text-primary hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center gap-1 text-xs uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-sm">delete</span> Remove
+                        </button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col md:flex-row gap-6 p-4 rounded-xl bg-surface-container-low transition-all hover:bg-surface-container-high group">
+<div class="w-full md:w-32 h-32 overflow-hidden rounded-xl bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500" data-alt="Vintage red wine being poured into a crystal glass in a dark cellar setting with warm backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGjif87JPWfgdGTRNgDdx7vUDt2VkfzPCAcnpqDwBlQJlN9LJQs4D1kv8YM_N14xT_a17WV_Bzncge-DPpO6GLZDZLvH30EClbIMbzOgwMrdwy-XZ_msu-CuhV1NMredlsd0Jc6W37FXQ5ZZpcmRtKP3wPK92VepWrzJfXqCtqt7HQNzzQaquRe28BAgNJ4XL7NWl0DBM4-wrb3YVO964GrGJbhFdb48ru8jo1UjG5f2tMzidPm4Q2NEZVX0aoYdhpwZuL8EndAm19"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-headline font-bold text-on-surface tracking-tight mb-1">Imperial Reserve 1982</h3>
+<p class="text-on-surface-variant text-sm max-w-md">Private vineyard selection. One of 500 remaining bottles.</p>
+</div>
+<p class="text-primary font-headline font-bold text-lg">$850.00</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center gap-4 bg-surface-container-lowest px-3 py-1 rounded-full border border-outline-variant/20">
+<button class="text-primary hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-sm font-bold font-label">01</span>
+<button class="text-primary hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center gap-1 text-xs uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-sm">delete</span> Remove
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Summary Section -->
+<div class="border-t border-primary/10 pt-10 space-y-4">
+<div class="flex justify-between items-center text-on-surface-variant font-label text-sm tracking-widest uppercase">
+<span>Subtotal</span>
+<span>$1,070.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label text-sm tracking-widest uppercase">
+<span>Service &amp; Gratuity (20%)</span>
+<span>$214.00</span>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/20 to-transparent my-6"></div>
+<div class="flex justify-between items-end">
+<div>
+<h4 class="text-primary font-label text-[10px] tracking-[0.2em] uppercase">Total Investment</h4>
+<p class="text-5xl font-headline font-bold text-primary tracking-tighter mt-1">$1,284.00</p>
+</div>
+<div class="hidden md:block text-right text-on-surface-variant text-[10px] uppercase tracking-widest font-medium opacity-50">
+                    Complimentary Valet Included<br/>with Orders over $500
+                </div>
+</div>
+</div>
+<!-- Checkout Button -->
+<div class="mt-12">
+<button class="w-full py-6 rounded-xl bg-gradient-to-br from-[#f2ca50] to-[#d4af37] text-[#131313] font-headline font-bold text-lg tracking-[0.1em] uppercase shadow-[0_10px_40px_rgba(242,202,80,0.15)] hover:shadow-[0_15px_50px_rgba(242,202,80,0.25)] transition-all active:scale-[0.98]">
+                Place Imperial Order
+            </button>
+<p class="text-center text-on-surface-variant text-[11px] mt-6 font-label tracking-widest uppercase opacity-60">
+                Secure encrypted checkout • No lines, no wait
+            </p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#131313] rounded-t-xl z-50 border-t border-[#d4af37]/15 shadow-[0_-10px_40px_rgba(0,0,0,0.8)] md:hidden">
+<a class="flex flex-col items-center justify-center text-[#e5e2e1] px-6 py-1 hover:bg-[#d4af37]/10 transition-all active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">restaurant_menu</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em]">MENU</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#f2ca50] to-[#d4af37] text-[#131313] rounded-xl px-6 py-1 active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em]">CART</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e2e1] px-6 py-1 hover:bg-[#d4af37]/10 transition-all active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">person</span>
+<span class="font-['Manrope'] font-bold text-[10px] tracking-[0.1em]">PROFILE</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Vivo Secure Entry -->
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPERIAL TABLE - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#564300",
+                    "secondary": "#fff9ef",
+                    "on-surface": "#e5e2e1",
+                    "tertiary-container": "#d5af37",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "surface-container-highest": "#353534",
+                    "secondary-fixed-dim": "#e9c400",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed": "#241a00",
+                    "surface-bright": "#3a3939",
+                    "secondary-fixed": "#ffe16d",
+                    "on-secondary-fixed": "#221b00",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-tint": "#e9c349",
+                    "on-tertiary-fixed": "#241a00",
+                    "primary-fixed-dim": "#e9c349",
+                    "tertiary": "#f3ca50",
+                    "outline-variant": "#4d4635",
+                    "primary-container": "#d4af37",
+                    "on-primary-container": "#554300",
+                    "error": "#ffb4ab",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "on-secondary-container": "#725f00",
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary": "#3c2f00",
+                    "surface-container-high": "#2a2a2a",
+                    "on-background": "#e5e2e1",
+                    "outline": "#99907c",
+                    "inverse-primary": "#735c00",
+                    "on-error": "#690005",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-variant": "#353534",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#ffe088",
+                    "error-container": "#93000a",
+                    "on-secondary": "#3a3000",
+                    "primary": "#f2ca50",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary": "#3d2f00",
+                    "tertiary-fixed": "#ffe08b",
+                    "surface": "#131313",
+                    "tertiary-fixed-dim": "#eac249",
+                    "inverse-on-surface": "#313030",
+                    "secondary-container": "#ffdb3c",
+                    "on-secondary-fixed-variant": "#544600",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pattern-bg {
+            background-image: radial-gradient(circle at 2px 2px, #f2ca5015 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .gold-shimmer {
+            background: linear-gradient(135deg, #f2ca50 0%, #d4af37 50%, #f2ca50 100%);
+            background-size: 200% 200%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 min-h-screen flex flex-col overflow-x-hidden">
+<!-- Top Navigation Suppression: Linear Task Flow (Login) -->
+<main class="flex-grow flex flex-col items-center justify-center relative px-6 py-12">
+<!-- Atmospheric Background Element -->
+<div class="absolute inset-0 pattern-bg opacity-30 z-0"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface opacity-90 z-0"></div>
+<!-- Login Container -->
+<div class="w-full max-w-md z-10 space-y-12">
+<!-- Branding Header -->
+<div class="text-center space-y-6">
+<!-- Large Vivo Branding (Placeholder for Logo Identity) -->
+<div class="flex justify-center items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<h1 class="text-6xl font-black tracking-tighter text-on-surface relative font-label italic">vivo</h1><span class="absolute -bottom-2 right-0 text-[10px] font-bold tracking-[0.3em] text-primary uppercase">X200 Ultra</span>
+</div>
+</div>
+<div class="space-y-2">
+<h2 class="text-3xl font-headline font-bold text-primary tracking-tight">IMPERIAL TABLE</h2>
+<p class="text-on-surface-variant font-label text-sm tracking-[0.2em] uppercase">Imperial Concierge Access | X200 ULTRA SERIES</p>
+</div>
+</div>
+<!-- Action Section -->
+<div class="space-y-8">
+<!-- Biometric/Vivo Specific Button -->
+<button class="w-full gold-shimmer text-on-primary h-16 rounded-xl flex items-center justify-between px-8 shadow-[0_10px_30px_rgba(212,175,55,0.2)] hover:shadow-[0_15px_40px_rgba(212,175,55,0.3)] transition-all active:scale-[0.98]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl" data-icon="fingerprint">fingerprint</span>
+<div class="text-left">
+<p class="text-xs font-bold uppercase tracking-widest opacity-80">Vivo Security</p>
+<p class="text-lg font-bold">Unlock with Vivo X200 Ultra</p>
+</div>
+</div>
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+<div class="relative py-4">
+<div class="absolute inset-0 flex items-center"><span class="w-full border-t border-outline-variant opacity-30"></span></div>
+<div class="relative flex justify-center text-xs uppercase tracking-widest text-on-surface-variant bg-background px-4">
+<span>Or Login with Credentials / 或使用账号登录</span>
+</div>
+</div>
+<!-- Manual Login Fields -->
+<form class="space-y-6">
+<div class="space-y-1 group">
+<label class="text-[10px] font-bold text-primary tracking-[0.15em] uppercase px-1">Imperial ID / 账号</label>
+<input class="w-full bg-surface-container-high border-b border-outline-variant focus:border-primary px-4 py-4 text-on-surface placeholder:text-outline/50 outline-none transition-all rounded-t-lg" placeholder="Phone or Email" type="text"/>
+</div>
+<div class="space-y-1 group">
+<label class="text-[10px] font-bold text-primary tracking-[0.15em] uppercase px-1">Passkey / 密码</label>
+<input class="w-full bg-surface-container-high border-b border-outline-variant focus:border-primary px-4 py-4 text-on-surface placeholder:text-outline/50 outline-none transition-all rounded-t-lg" placeholder="••••••••" type="password"/>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant font-medium">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded-sm bg-surface-container-highest border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span>Remember Me / 记住我</span>
+</label>
+<a class="text-primary hover:underline underline-offset-4" href="#">Forgot Password?</a>
+</div>
+<button class="w-full py-4 bg-surface-container-highest border border-primary/30 text-primary font-bold rounded-xl hover:bg-primary/5 transition-colors uppercase tracking-[0.1em]" type="submit">
+                        Sign In / 登录
+                    </button>
+</form>
+</div>
+<!-- Footer Links -->
+<div class="pt-8 text-center space-y-4">
+<p class="text-on-surface-variant text-sm">
+                    New to the Imperial Circle? 
+                    <a class="text-primary font-bold hover:underline" href="#">Request Invitation</a>
+</p>
+<div class="flex justify-center gap-6 text-[10px] text-outline uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<!-- Asymmetric Decorative Image -->
+<div class="hidden lg:block absolute right-0 top-1/4 w-1/3 h-2/3 opacity-40 mix-blend-screen pointer-events-none">
+<img alt="High-end dining atmosphere" class="w-full h-full object-cover rounded-l-[100px]" data-alt="Close-up of a luxury gold-rimmed plate with delicate garnish under dramatic spot lighting against a dark obsidian background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY99dBUeMvB7BLWHnarfIAUgSzfVVtG704MrWajNdjvpduK0c0gxbySOEWfJXFAl499DBQMWqMXqb3R_uIoVx9XgCWP0JGS3kxeUDFFf0g7KGFFihvVsLmh-YiEuNg2ltttGh__4ebJ_jUnPhIiBtHhtQ0eAp1HG4x9-DJ8qj4I7vbMpCd-Ns_ATTFlAPfXJn_pRAkY5Ye0PgZRsFiTfqbDWHRGz2ejoVVHRDhMQ4rDxveSu-pLv38CnE06RxVxossg52GOCZLvkto"/>
+</div>
+</main>
+<!-- Signature Ornamental Seal -->
+<div class="fixed bottom-10 right-10 z-50">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest border border-primary/20 flex items-center justify-center shadow-2xl">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="shield_with_heart" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+</div>
+<!-- Bottom Nav Suppression: Focused Task flow -->
+</body></html>
